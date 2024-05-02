@@ -42,23 +42,24 @@
            body {
                  background-image:url(img/images.png) ;
                  background-size: 200px;
+                }
            
-        }
-        #ciao {
-          animation: rotation 3s infinite linear;
-           
-        }
-        .rotate {
-  animation: rotation 2s infinite linear;
+                 #ciao{
+    padding:5px;
+    animation: spin 4s linear infinite;
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+
+#ciao:hover{
+    animation-duration:1s;
 }
+
+
+@keyframes spin{
+  100% { transform: rotate(360deg); }
+}
+
+  
+
 @font-face {
   font-family: pixel;
   src: url(img/Minecraft.ttf);
